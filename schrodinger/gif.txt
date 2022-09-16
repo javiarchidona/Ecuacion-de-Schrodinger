@@ -1,0 +1,10 @@
+//LITERAL
+
+
+set terminal gif animate
+set xra[0:100]
+set yra[0:0.3]
+set key left
+set output 'parteREAL_IMA(sin_potencial).gif'
+set size 1,1
+do for[a=0:1000]{plot 'phi.txt' i a u 1:2  w l title "Probabilidad"}
